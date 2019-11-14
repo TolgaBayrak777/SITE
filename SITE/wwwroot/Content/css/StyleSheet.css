@@ -1,0 +1,114 @@
+﻿@import url(normalize.css);
+
+
+body {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 14px;
+    background-color: burlywood;
+}
+
+#container {
+    width: 960px;
+    /*   height: 600px  ; /* silinecek */
+    position: relative;
+    margin: 10px auto; /* yukarıya aşağıya 10 px boşluk veriyorum , auto ise sağ - sollu ortalamak için kullanılıyor */
+    border: 1px solid double; /*1px lik bir sayfa kalınlığı olsun diyorum */
+    background-color: white; /* arka plan rengi de beyaz olsun diyorum */
+}
+
+/* ***  Header  *** */
+
+header {
+    width: 960px;
+    height: 120px;
+    position: relative;
+    /*  background-color: goldenrod; */
+}
+
+/* *** logo *** */
+#logo {
+    width: 384px;
+    height: 120px;
+    position: relative;
+    background-image: url('c:\users\tolbay\source\repos\website_calismam\website_calismam\Content\img\logo.png');
+}
+
+/* social media */
+#social-media {
+    width: 180px;
+    height: 48px;
+    position: absolute; /* ikonun sağ üst köşede göstermek için position:absolute olsun dedim. */
+    top: 20px; /* yukarıdan 20 px bir boşluk olsun dedim */
+    right: 20px; /* sağdan 20 px bir boşluk olsun dedim. */
+}
+
+.social {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    background-color: orange; /* silinecek*/
+}
+
+
+
+/* *** Nav *** */
+nav {
+    width: 960px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    position: relative;
+  /*  background-color: teal; */
+}
+
+
+.nav-item{
+    width:191px;
+    height:38px;
+    position:relative;
+    float:left; /* sola yaslıyorum */
+    border:1px solid black;
+    border-left:0;  /* sol kenarlık olmasın diyorum */
+    background-color:royalblue;
+    color:white /*metin renkleri beyaz olsun*/
+    
+
+}
+
+
+/* *** content ***  */
+#content {
+    width: 920px;
+    padding: 20px;
+   /* height: 400px; /* silinecek */ 
+    position: relative;
+    text-align: justify;
+   /* background-color: royalblue; */
+}
+
+
+#content h1 {  /* content te kullanacağımız başlığın boyutu 18 px olsun , ortalanmış olsun */
+    font-size:18px;
+    text-align:center;
+
+}.img-left {   /* resimleri içerikte sola yaslamak için img-left diye bir sınıf tanımlayalım*/
+width:260px;
+float:left;
+margin: 0 10px 10px 0 ; /* 0 yukarı , 10 px sağa , 10 px aşağı , 0 da sola diye dış boşluk veriyorum */
+ }
+
+/* *** footer *** */
+
+footer {
+    width: 960px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid black;
+    color: white;
+    background-color: royalblue;
+}
+
